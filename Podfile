@@ -8,5 +8,8 @@ target 'KidsGame' do
   # Pods for KidsGame
   pod "Haptica"
   pod "Peep"
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Analytics'
+  pod 'IQKeyboardManagerSwift'
   
 end

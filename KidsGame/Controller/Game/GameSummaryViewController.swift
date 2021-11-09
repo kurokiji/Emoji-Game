@@ -12,24 +12,13 @@ class GameSummaryViewController: UIViewController {
     @IBOutlet weak var finalPointsLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     var finalPoints: Int?
-    
-    override func viewWillAppear(_ animated: Bool) {
-        backgroundView.layer.cornerRadius = 30
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundView.layer.cornerRadius = 30
         if let points = finalPoints {
             finalPointsLabel.text = "\(points) pts"
+            isModalInPresentation = true
         }
     }
-    override func viewDidDisappear(_ animated: Bool) {
-        let gameController = ViewController()
-        gameController.startGame()
-    }
-    
-    
-    @IBAction func saveRecord(_ sender: Any) {
-    }
-    
 }

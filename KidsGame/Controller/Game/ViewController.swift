@@ -8,8 +8,9 @@
 import UIKit
 import Haptica
 import Peep
+import FirebaseAnalytics
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate {
 
     // MARK: - Outlets
     @IBOutlet weak var icons: UICollectionView!
@@ -31,31 +32,58 @@ class ViewController: UIViewController {
                           ["🚕", "🚜", "🚑", "🚌", "🏎", "🏍", "🛴", "🚓", "🚒"]]
     
     var iconsLibrary = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    var preGameTimer: Timer?
     var gameTimer : Timer?
     var roundTimer: Timer?
+    var preGameTime = 3
     var gameTime = 0
     var roundTime = 0
     var points = 0
     var iconsShuffled: [String]?
     var isPlaying: Bool?
+    let threeTop = TopThreeController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        threeTop.pullRecords()
         gameTime = initialGameTime
         isPlaying = false
         generateLibrary()
         icons.register(IconCollectionViewCell.nib(), forCellWithReuseIdentifier: IconCollectionViewCell.identifier)
         icons.delegate = self
         icons.dataSource = self
-        setLabels()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        startGame()
+        startPreGameTimer()
     }
     
     // MARK: - Controlling the game functions
 
+    public func startPreGameTimer(){
+        preGameTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(preGameCounter), userInfo: nil, repeats: true)
+    }
+    
+    @objc func preGameCounter() {
+        let animation = CATransition()
+        animation.duration = 0.2
+        targetIcon.layer.add(animation, forKey: nil)
+        switch preGameTime {
+        case 3:
+            targetIcon.text = "3️⃣"
+        case 2:
+            targetIcon.text = "2️⃣"
+        case 1:
+            targetIcon.text = "1️⃣"
+       default:
+           setLabels()
+           startGame()
+           preGameTimer?.invalidate()
+        }
+        
+        preGameTime -= 1
+    }
+    
     public func startGame(){
         isPlaying = true
         gameTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireGameTimer), userInfo: nil, repeats: true)
@@ -63,6 +91,7 @@ class ViewController: UIViewController {
     }
     
     public func rebootGame() {
+        preGameTime = 3
         roundTime = 0
         points = 0
         gameTime = initialGameTime
@@ -74,8 +103,26 @@ class ViewController: UIViewController {
         isPlaying = false
         roundTimer?.invalidate()
         gameTimer?.invalidate()
-//        performSegue(withIdentifier: "showGameSummary", sender: nil)
-        presentAlert()
+        print(checkPosition())
+        if checkPosition() == "noTop" {
+            performSegue(withIdentifier: "showGameSummary", sender: nil)
+        } else {
+            performSegue(withIdentifier: "showTopRegister", sender: nil)
+        }
+    
+//        presentAlert()
+    }
+    
+    private func checkPosition() -> String{
+        if points > threeTop.top1.points{
+            return "top1"
+        } else if points > threeTop.top2.points {
+            return "top2"
+        } else if points > threeTop.top3.points {
+            return "top3"
+        } else {
+            return "noTop"
+        }
     }
     
     private func checkAnswer(selectedIcon: Int) {
@@ -174,13 +221,28 @@ class ViewController: UIViewController {
         roundTime += 1
         roundTimeLabel.text = "\(String(format: "%02d", roundTime))"
     }
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showGameSummary" {
-//            let controller = segue.destination as! GameSummaryViewController
-//            controller.finalPoints = points
-//        }
-//    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showGameSummary" {
+            let controller = segue.destination as! GameSummaryViewController
+            controller.finalPoints = points
+        }
+        
+        if segue.identifier == "showTopRegister" {
+            let controller = segue.destination as! RecordWonViewController
+            controller.finalPoints = points
+            controller.position = checkPosition()
+        }
+    }
+    
+    @IBAction func unwindToGame(_ unwindSegue: UIStoryboardSegue) {
+//        let sourceViewController = unwindSegue.source
+        Analytics.logEvent("RepeatPlay", parameters: ["message": "se ha vuelto a jugar"])
+        startPreGameTimer()
+        rebootGame()
+        setLabels()
+        targetIcon.text = "▶️"
+    }
     
 /*
  Las alertas son ventanas flotantes que presentan información al usurio y las cuales se pueden configurar con una serie de botones que llevan a cabo una función concreta.
@@ -188,21 +250,20 @@ class ViewController: UIViewController {
  
  La alternativa, que está implementada y comentada, era usar un nuevo viewController que presentará la información pero se ha desechado su uso por la complejidad a la hora de cerrarlo y reiniciar la partida, ya que este no era el objetivo principal del ejercicio.
  */
-    private func presentAlert(){
-        let finishAlert = UIAlertController(title: "Game Over", message: "You earned \(points) points!! \n Want to play again?", preferredStyle: .alert)
-        let playAgain = UIAlertAction(title: "Play", style: .default) { UIAlertAction in
-            self.rebootGame()
-            self.setLabels()
-            self.startGame()
-        }
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { UIAlertAction in
-            self.dismiss(animated: true, completion: nil)
-        }
-        finishAlert.addAction(playAgain)
-        finishAlert.addAction(cancel)
-        self.present(finishAlert, animated: true, completion: nil)
-    }
-    
+//    private func presentAlert(){
+//        let finishAlert = UIAlertController(title: "Game Over", message: "You earned \(points) points!! \n Want to play again?", preferredStyle: .alert)
+//        let playAgain = UIAlertAction(title: "Play", style: .default) { UIAlertAction in
+//            self.rebootGame()
+//            self.setLabels()
+//            self.startGame()
+//        }
+//        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { UIAlertAction in
+//            self.dismiss(animated: true, completion: nil)
+//        }
+//        finishAlert.addAction(playAgain)
+//        finishAlert.addAction(cancel)
+//        self.present(finishAlert, animated: true, completion: nil)
+//    }
     
 }
 
