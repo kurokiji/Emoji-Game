@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AE483631326326040CD77F220089B37 /* Pods-KidsGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF07185A8C6EDB9DF2841670C2FEB8C /* Pods-KidsGame-dummy.m */; };
+		39B6834DA2CCF83E85F024C94A867CDE /* Peep-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15869DF1FE54F122E30DBE975ACBB80F /* Peep-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4761AD0802EBA55C01E6F3834A19D799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		49CD0AD73662F1A59F46A9DDDDB6FF44 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DAE7B96740C06D3199DAD9C33315BE /* Associated.swift */; };
+		7C0E6E8ABC4E57C1F8582A5E18C499E0 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FC4978B08B8CC4A3B7FD9A6D8427D /* Haptic.swift */; };
+		829955AA9206FDD6A523921EAA13F9CA /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D1D43AB26F2F1C32392CA905ADF75 /* Hapticable.swift */; };
+		8F4E7726527CB88C4367260820591C07 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639763D655DF8AB4B842AA0925BEC9C /* Haptica-dummy.m */; };
+		93BBB753C1050C45B8A2FA26923B2001 /* Peep-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9278029A34CBF802F48C030B2590C /* Peep-dummy.m */; };
+		AA547C30E8F323FA99104DF5C1E29F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C01982104174C06285FC9CB85378BCD9 /* Pods-KidsGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9D1348097319E3BFDD4B829336FF9 /* Pods-KidsGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C20BFDB9F5F37393A04609B011A0C4B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BDC1A0E7F35386E98373F2AB4557C /* Extensions.swift */; };
+		C5EF1746C9A136A800991A9EBA0CBD2B /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBECEF202FE91B0C8E3C674F89EB20FB /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA967DBF09CD97755077742237B3693A /* Peep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7610E54EF0B60D80EA501540DC04718 /* Peep.swift */; };
+		CD11F1AE6CB4DFB34B3FD7BEFFB397DB /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8057F3EA1BF136E3EA14E561A9B55D9 /* Pattern.swift */; };
+		FE93901E8130D70B46EAEF24EFB324D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F2A2496E72CF339EAEF0C39BD4BAABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D42DC7F21005DF10871F318716326E5E;
+			remoteInfo = Haptica;
+		};
+		C2DBD874C1E545799029842BA9D2552C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6B7CB4AE25815F5E0B4CD1CCC00E28;
+			remoteInfo = Peep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E9D1348097319E3BFDD4B829336FF9 /* Pods-KidsGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KidsGame-umbrella.h"; sourceTree = "<group>"; };
+		0652701B1EE38E3F7AE7A244C9DF3491 /* Pods-KidsGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KidsGame.modulemap"; sourceTree = "<group>"; };
+		14B1EDDEE59CF99CF04DB8BD260882D4 /* Haptica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.release.xcconfig; sourceTree = "<group>"; };
+		15869DF1FE54F122E30DBE975ACBB80F /* Peep-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Peep-umbrella.h"; sourceTree = "<group>"; };
+		192C7141923D7872FED65B6C1D2BD76A /* Pods_KidsGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KidsGame.framework; path = "Pods-KidsGame.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20DAE7B96740C06D3199DAD9C33315BE /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
+		2DD0F4C5BE888D50066FF3AA16689A39 /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
+		35722857CB203F06A3B640F120B4BF60 /* Haptica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haptica.framework; path = Haptica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3EF4C827ADE5C8EDC58A0311BCAE49 /* Peep.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Peep.modulemap; sourceTree = "<group>"; };
+		426FC4978B08B8CC4A3B7FD9A6D8427D /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
+		4ABFF24171942BD8FC912F8DEF7BECA8 /* Peep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Peep.debug.xcconfig; sourceTree = "<group>"; };
+		4E1EAC46D1BAEAFEF7B0FB09894B489A /* Pods-KidsGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KidsGame-frameworks.sh"; sourceTree = "<group>"; };
+		5AE9278029A34CBF802F48C030B2590C /* Peep-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Peep-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8639763D655DF8AB4B842AA0925BEC9C /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
+		866CB9EBCB51D68E4B90CD025FAB60F3 /* Peep-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Peep-prefix.pch"; sourceTree = "<group>"; };
+		875C9B52278795E97D5705E9AEE8F4F7 /* Haptica-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Haptica-Info.plist"; sourceTree = "<group>"; };
+		8FE0552D30A03595E55D1BAAD465D36E /* Pods-KidsGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KidsGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		9676FEE40BA94E66878E982EDDAD1A49 /* Pods-KidsGame-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KidsGame-Info.plist"; sourceTree = "<group>"; };
+		98DEF7EF93C17119C6AB0DF5385537E0 /* Haptica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0F77131125C13190490B4C373DE3C16 /* Pods-KidsGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KidsGame.debug.xcconfig"; sourceTree = "<group>"; };
+		B4114022A771444F0068AD5A3BE4C750 /* Peep-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Peep-Info.plist"; sourceTree = "<group>"; };
+		BBECEF202FE91B0C8E3C674F89EB20FB /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
+		BDB21C597304B592AF3AD49297FCF973 /* Peep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Peep.release.xcconfig; sourceTree = "<group>"; };
+		C8057F3EA1BF136E3EA14E561A9B55D9 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		CC42D18E5B9B0B5CFF5F2F984A9945B0 /* Peep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Peep.framework; path = Peep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F21182C32A46A722DAED1ECD8141D6 /* Pods-KidsGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KidsGame.release.xcconfig"; sourceTree = "<group>"; };
+		D7610E54EF0B60D80EA501540DC04718 /* Peep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Peep.swift; path = Sources/Peep.swift; sourceTree = "<group>"; };
+		DBF07185A8C6EDB9DF2841670C2FEB8C /* Pods-KidsGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KidsGame-dummy.m"; sourceTree = "<group>"; };
+		DE2D1D43AB26F2F1C32392CA905ADF75 /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
+		E84BDC1A0E7F35386E98373F2AB4557C /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		EC7CFF98B0FD9214325D13AC4DBFC5C3 /* Pods-KidsGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KidsGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2E45516B5946D4A8764D4A5A21BDB91 /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13066A4D6F6A1F0DBC84C75E4C7D9DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA547C30E8F323FA99104DF5C1E29F28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2646074D5ACB1088F27F5A1076E093BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE93901E8130D70B46EAEF24EFB324D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96563F339055C57E9C055F03C20CDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4761AD0802EBA55C01E6F3834A19D799 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02BD25E8AED05D0D2023A8253F7FAAC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2E45516B5946D4A8764D4A5A21BDB91 /* Haptica.modulemap */,
+				8639763D655DF8AB4B842AA0925BEC9C /* Haptica-dummy.m */,
+				875C9B52278795E97D5705E9AEE8F4F7 /* Haptica-Info.plist */,
+				2DD0F4C5BE888D50066FF3AA16689A39 /* Haptica-prefix.pch */,
+				BBECEF202FE91B0C8E3C674F89EB20FB /* Haptica-umbrella.h */,
+				98DEF7EF93C17119C6AB0DF5385537E0 /* Haptica.debug.xcconfig */,
+				14B1EDDEE59CF99CF04DB8BD260882D4 /* Haptica.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Haptica";
+			sourceTree = "<group>";
+		};
+		0B8A14A20D6FE8342E60D45965EC9563 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E526F1284DE4ED86A107EDD8259CFB2D /* Pods-KidsGame */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		357CC123354087A8216FC46C8552899C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A3EF4C827ADE5C8EDC58A0311BCAE49 /* Peep.modulemap */,
+				5AE9278029A34CBF802F48C030B2590C /* Peep-dummy.m */,
+				B4114022A771444F0068AD5A3BE4C750 /* Peep-Info.plist */,
+				866CB9EBCB51D68E4B90CD025FAB60F3 /* Peep-prefix.pch */,
+				15869DF1FE54F122E30DBE975ACBB80F /* Peep-umbrella.h */,
+				4ABFF24171942BD8FC912F8DEF7BECA8 /* Peep.debug.xcconfig */,
+				BDB21C597304B592AF3AD49297FCF973 /* Peep.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Peep";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9C659BC5EB8462F6D22DBF2D5329BA32 /* Peep */ = {
+			isa = PBXGroup;
+			children = (
+				D7610E54EF0B60D80EA501540DC04718 /* Peep.swift */,
+				357CC123354087A8216FC46C8552899C /* Support Files */,
+			);
+			name = Peep;
+			path = Peep;
+			sourceTree = "<group>";
+		};
+		A9C1F4793C8E5D876B7E1D6B0AB14D1C /* Haptica */ = {
+			isa = PBXGroup;
+			children = (
+				20DAE7B96740C06D3199DAD9C33315BE /* Associated.swift */,
+				E84BDC1A0E7F35386E98373F2AB4557C /* Extensions.swift */,
+				426FC4978B08B8CC4A3B7FD9A6D8427D /* Haptic.swift */,
+				DE2D1D43AB26F2F1C32392CA905ADF75 /* Hapticable.swift */,
+				C8057F3EA1BF136E3EA14E561A9B55D9 /* Pattern.swift */,
+				02BD25E8AED05D0D2023A8253F7FAAC5 /* Support Files */,
+			);
+			name = Haptica;
+			path = Haptica;
+			sourceTree = "<group>";
+		};
+		B626FACD5DB0D75D36A8B60202682D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35722857CB203F06A3B640F120B4BF60 /* Haptica.framework */,
+				CC42D18E5B9B0B5CFF5F2F984A9945B0 /* Peep.framework */,
+				192C7141923D7872FED65B6C1D2BD76A /* Pods_KidsGame.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E34B2F1F6722C43ACF1CE226D48E4314 /* Pods */,
+				B626FACD5DB0D75D36A8B60202682D5C /* Products */,
+				0B8A14A20D6FE8342E60D45965EC9563 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E34B2F1F6722C43ACF1CE226D48E4314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1F4793C8E5D876B7E1D6B0AB14D1C /* Haptica */,
+				9C659BC5EB8462F6D22DBF2D5329BA32 /* Peep */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E526F1284DE4ED86A107EDD8259CFB2D /* Pods-KidsGame */ = {
+			isa = PBXGroup;
+			children = (
+				0652701B1EE38E3F7AE7A244C9DF3491 /* Pods-KidsGame.modulemap */,
+				EC7CFF98B0FD9214325D13AC4DBFC5C3 /* Pods-KidsGame-acknowledgements.markdown */,
+				8FE0552D30A03595E55D1BAAD465D36E /* Pods-KidsGame-acknowledgements.plist */,
+				DBF07185A8C6EDB9DF2841670C2FEB8C /* Pods-KidsGame-dummy.m */,
+				4E1EAC46D1BAEAFEF7B0FB09894B489A /* Pods-KidsGame-frameworks.sh */,
+				9676FEE40BA94E66878E982EDDAD1A49 /* Pods-KidsGame-Info.plist */,
+				04E9D1348097319E3BFDD4B829336FF9 /* Pods-KidsGame-umbrella.h */,
+				B0F77131125C13190490B4C373DE3C16 /* Pods-KidsGame.debug.xcconfig */,
+				D2F21182C32A46A722DAED1ECD8141D6 /* Pods-KidsGame.release.xcconfig */,
+			);
+			name = "Pods-KidsGame";
+			path = "Target Support Files/Pods-KidsGame";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80607C5F97F98857001C839E91A6E88A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF1746C9A136A800991A9EBA0CBD2B /* Haptica-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB24BBE8CA8C062C5EA83E609D808DD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01982104174C06285FC9CB85378BCD9 /* Pods-KidsGame-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEF7C3E5AFF4C7C14FA7A6DC305248D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B6834DA2CCF83E85F024C94A867CDE /* Peep-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		116C2D710C93F08D9BCAEF6910B73442 /* Pods-KidsGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24444F894BDD2B8AC44FCD076C706560 /* Build configuration list for PBXNativeTarget "Pods-KidsGame" */;
+			buildPhases = (
+				CB24BBE8CA8C062C5EA83E609D808DD8 /* Headers */,
+				873DEEC3B69390ED0A8556885A98FD5D /* Sources */,
+				D96563F339055C57E9C055F03C20CDCE /* Frameworks */,
+				1EB009F29D1699F07B455B049B02AA19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E6214282E7530527DA3206DB1CBAF54 /* PBXTargetDependency */,
+				0CCB85791D162F5DA67E2C43B52B8437 /* PBXTargetDependency */,
+			);
+			name = "Pods-KidsGame";
+			productName = "Pods-KidsGame";
+			productReference = 192C7141923D7872FED65B6C1D2BD76A /* Pods_KidsGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D42DC7F21005DF10871F318716326E5E /* Haptica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DFFD7FCCEE982ED336E2F07E3E7663 /* Build configuration list for PBXNativeTarget "Haptica" */;
+			buildPhases = (
+				80607C5F97F98857001C839E91A6E88A /* Headers */,
+				93457FAF2C6C2EFE4BFA397DBC324CD5 /* Sources */,
+				2646074D5ACB1088F27F5A1076E093BB /* Frameworks */,
+				1DBCCF27C2A395614D7CF7B104AB0841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Haptica;
+			productName = Haptica;
+			productReference = 35722857CB203F06A3B640F120B4BF60 /* Haptica.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB6B7CB4AE25815F5E0B4CD1CCC00E28 /* Peep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9206062BBEFC4A8AB6125071DFD4EA32 /* Build configuration list for PBXNativeTarget "Peep" */;
+			buildPhases = (
+				FDEF7C3E5AFF4C7C14FA7A6DC305248D /* Headers */,
+				748BE77B5ABE559EC9F172D10C93E79E /* Sources */,
+				13066A4D6F6A1F0DBC84C75E4C7D9DDB /* Frameworks */,
+				A02586E2182F4CDEF4614006E50EA0CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Peep;
+			productName = Peep;
+			productReference = CC42D18E5B9B0B5CFF5F2F984A9945B0 /* Peep.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B626FACD5DB0D75D36A8B60202682D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D42DC7F21005DF10871F318716326E5E /* Haptica */,
+				EB6B7CB4AE25815F5E0B4CD1CCC00E28 /* Peep */,
+				116C2D710C93F08D9BCAEF6910B73442 /* Pods-KidsGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DBCCF27C2A395614D7CF7B104AB0841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB009F29D1699F07B455B049B02AA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02586E2182F4CDEF4614006E50EA0CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		748BE77B5ABE559EC9F172D10C93E79E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BBB753C1050C45B8A2FA26923B2001 /* Peep-dummy.m in Sources */,
+				CA967DBF09CD97755077742237B3693A /* Peep.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873DEEC3B69390ED0A8556885A98FD5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE483631326326040CD77F220089B37 /* Pods-KidsGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93457FAF2C6C2EFE4BFA397DBC324CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CD0AD73662F1A59F46A9DDDDB6FF44 /* Associated.swift in Sources */,
+				C20BFDB9F5F37393A04609B011A0C4B3 /* Extensions.swift in Sources */,
+				7C0E6E8ABC4E57C1F8582A5E18C499E0 /* Haptic.swift in Sources */,
+				8F4E7726527CB88C4367260820591C07 /* Haptica-dummy.m in Sources */,
+				829955AA9206FDD6A523921EAA13F9CA /* Hapticable.swift in Sources */,
+				CD11F1AE6CB4DFB34B3FD7BEFFB397DB /* Pattern.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CCB85791D162F5DA67E2C43B52B8437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Peep;
+			target = EB6B7CB4AE25815F5E0B4CD1CCC00E28 /* Peep */;
+			targetProxy = C2DBD874C1E545799029842BA9D2552C /* PBXContainerItemProxy */;
+		};
+		0E6214282E7530527DA3206DB1CBAF54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haptica;
+			target = D42DC7F21005DF10871F318716326E5E /* Haptica */;
+			targetProxy = 6F2A2496E72CF339EAEF0C39BD4BAABF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29624C4BA393C11BCDCA31A8C7AC8E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB21C597304B592AF3AD49297FCF973 /* Peep.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Peep/Peep-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Peep/Peep-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Peep/Peep.modulemap";
+				PRODUCT_MODULE_NAME = Peep;
+				PRODUCT_NAME = Peep;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3369149A4E4161BDB73A80FBEF591193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B1EDDEE59CF99CF04DB8BD260882D4 /* Haptica.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Haptica/Haptica-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Haptica/Haptica-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Haptica/Haptica.modulemap";
+				PRODUCT_MODULE_NAME = Haptica;
+				PRODUCT_NAME = Haptica;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62E0C49EDEA3D8A652F42CB378A60B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98DEF7EF93C17119C6AB0DF5385537E0 /* Haptica.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Haptica/Haptica-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Haptica/Haptica-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Haptica/Haptica.modulemap";
+				PRODUCT_MODULE_NAME = Haptica;
+				PRODUCT_NAME = Haptica;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B72D28ABA2E3DECF862BC62BC051BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F77131125C13190490B4C373DE3C16 /* Pods-KidsGame.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KidsGame/Pods-KidsGame-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KidsGame/Pods-KidsGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AEE29F3779E5DC731B0A3190668B4FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABFF24171942BD8FC912F8DEF7BECA8 /* Peep.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Peep/Peep-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Peep/Peep-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Peep/Peep.modulemap";
+				PRODUCT_MODULE_NAME = Peep;
+				PRODUCT_NAME = Peep;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFA4BA01C2F1509903760227A36A9A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F21182C32A46A722DAED1ECD8141D6 /* Pods-KidsGame.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KidsGame/Pods-KidsGame-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KidsGame/Pods-KidsGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24444F894BDD2B8AC44FCD076C706560 /* Build configuration list for PBXNativeTarget "Pods-KidsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B72D28ABA2E3DECF862BC62BC051BF0 /* Debug */,
+				EFA4BA01C2F1509903760227A36A9A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9206062BBEFC4A8AB6125071DFD4EA32 /* Build configuration list for PBXNativeTarget "Peep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEE29F3779E5DC731B0A3190668B4FC6 /* Debug */,
+				29624C4BA393C11BCDCA31A8C7AC8E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DFFD7FCCEE982ED336E2F07E3E7663 /* Build configuration list for PBXNativeTarget "Haptica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E0C49EDEA3D8A652F42CB378A60B04 /* Debug */,
+				3369149A4E4161BDB73A80FBEF591193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - Haptica (3.0.2)
+  - Peep (3.0.0)
+
+DEPENDENCIES:
+  - Haptica
+  - Peep
+
+SPEC REPOS:
+  trunk:
+    - Haptica
+    - Peep
+
+SPEC CHECKSUMS:
+  Haptica: dc206651beeca25ab4744c633fbf0ae4d1e86baf
+  Peep: 63ea9c8ab41a44db14a2058d9b2e4f31ca69a86f
+
+PODFILE CHECKSUM: ceb38fa91c59c26854a7c4a41e506663bd7ec787
+
+COCOAPODS: 1.10.2

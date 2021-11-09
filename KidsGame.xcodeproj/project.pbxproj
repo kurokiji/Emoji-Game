@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7935A9162730678E0099DACA /* GameSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A9152730678E0099DACA /* GameSummaryViewController.swift */; };
+		7952BDCF2733DF4F003ABBBA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952BDCE2733DF4F003ABBBA /* MenuViewController.swift */; };
+		79D22AD4271B2D0A0082DE97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D22AD3271B2D0A0082DE97 /* AppDelegate.swift */; };
+		79D22AD6271B2D0A0082DE97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D22AD5271B2D0A0082DE97 /* SceneDelegate.swift */; };
+		79D22AD8271B2D0A0082DE97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D22AD7271B2D0A0082DE97 /* ViewController.swift */; };
+		79D22ADB271B2D0A0082DE97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D22AD9271B2D0A0082DE97 /* Main.storyboard */; };
+		79D22ADD271B2D0B0082DE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D22ADC271B2D0B0082DE97 /* Assets.xcassets */; };
+		79D22AE0271B2D0B0082DE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D22ADE271B2D0B0082DE97 /* LaunchScreen.storyboard */; };
+		79F88A9C272416C500D079DE /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F88A9A272416C500D079DE /* IconCollectionViewCell.swift */; };
+		79F88A9D272416C500D079DE /* IconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F88A9B272416C500D079DE /* IconCollectionViewCell.xib */; };
+		B533B5106DC97B85E3B54A91 /* Pods_KidsGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6FEC58A673AC4B6116CCF1 /* Pods_KidsGame.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B8745FDF3159DF2B4EBA7F3 /* Pods-KidsGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsGame.release.xcconfig"; path = "Target Support Files/Pods-KidsGame/Pods-KidsGame.release.xcconfig"; sourceTree = "<group>"; };
+		7394BAFEEE664D4536224AE7 /* Pods-KidsGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsGame.debug.xcconfig"; path = "Target Support Files/Pods-KidsGame/Pods-KidsGame.debug.xcconfig"; sourceTree = "<group>"; };
+		7935A9152730678E0099DACA /* GameSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSummaryViewController.swift; sourceTree = "<group>"; };
+		7952BDCE2733DF4F003ABBBA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		79D22AD0271B2D0A0082DE97 /* KidsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D22AD3271B2D0A0082DE97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79D22AD5271B2D0A0082DE97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79D22AD7271B2D0A0082DE97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79D22ADA271B2D0A0082DE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79D22ADC271B2D0B0082DE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79D22ADF271B2D0B0082DE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79D22AE1271B2D0B0082DE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F88A9A272416C500D079DE /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
+		79F88A9B272416C500D079DE /* IconCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F6FEC58A673AC4B6116CCF1 /* Pods_KidsGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79D22ACD271B2D0A0082DE97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B533B5106DC97B85E3B54A91 /* Pods_KidsGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7921D43B2733C6D100A28421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7921D4422733C7BB00A28421 /* Cell */,
+				7921D43E2733C6EA00A28421 /* Launch */,
+				7921D43D2733C6E600A28421 /* Game */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7921D43D2733C6E600A28421 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				79D22AD9271B2D0A0082DE97 /* Main.storyboard */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		7921D43E2733C6EA00A28421 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				79D22ADE271B2D0B0082DE97 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		7921D4402733C72100A28421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79D22AE1271B2D0B0082DE97 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7921D4412733C73B00A28421 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7921D4442733C7D700A28421 /* Cell */,
+				7921D4432733C7CB00A28421 /* Game */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7921D4422733C7BB00A28421 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79F88A9B272416C500D079DE /* IconCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7921D4432733C7CB00A28421 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				79D22AD7271B2D0A0082DE97 /* ViewController.swift */,
+				7935A9152730678E0099DACA /* GameSummaryViewController.swift */,
+				7952BDCE2733DF4F003ABBBA /* MenuViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		7921D4442733C7D700A28421 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79F88A9A272416C500D079DE /* IconCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		79D22AC7271B2D0A0082DE97 = {
+			isa = PBXGroup;
+			children = (
+				79D22AD2271B2D0A0082DE97 /* KidsGame */,
+				79D22AD1271B2D0A0082DE97 /* Products */,
+				8258C2B149D4EF1819D5110D /* Pods */,
+				C6E2AF684893E5CC986228DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79D22AD1271B2D0A0082DE97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79D22AD0271B2D0A0082DE97 /* KidsGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79D22AD2271B2D0A0082DE97 /* KidsGame */ = {
+			isa = PBXGroup;
+			children = (
+				7921D4412733C73B00A28421 /* Controller */,
+				7921D43B2733C6D100A28421 /* View */,
+				7921D4402733C72100A28421 /* Supporting Files */,
+				79D22ADC271B2D0B0082DE97 /* Assets.xcassets */,
+				79D22AD3271B2D0A0082DE97 /* AppDelegate.swift */,
+				79D22AD5271B2D0A0082DE97 /* SceneDelegate.swift */,
+			);
+			path = KidsGame;
+			sourceTree = "<group>";
+		};
+		8258C2B149D4EF1819D5110D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7394BAFEEE664D4536224AE7 /* Pods-KidsGame.debug.xcconfig */,
+				0B8745FDF3159DF2B4EBA7F3 /* Pods-KidsGame.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6E2AF684893E5CC986228DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6FEC58A673AC4B6116CCF1 /* Pods_KidsGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79D22ACF271B2D0A0082DE97 /* KidsGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D22AE4271B2D0B0082DE97 /* Build configuration list for PBXNativeTarget "KidsGame" */;
+			buildPhases = (
+				A212699295B59C3B5641ABBB /* [CP] Check Pods Manifest.lock */,
+				79D22ACC271B2D0A0082DE97 /* Sources */,
+				79D22ACD271B2D0A0082DE97 /* Frameworks */,
+				79D22ACE271B2D0A0082DE97 /* Resources */,
+				858E80CA50F49F9F1D34E3A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidsGame;
+			productName = KidsGame;
+			productReference = 79D22AD0271B2D0A0082DE97 /* KidsGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79D22AC8271B2D0A0082DE97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					79D22ACF271B2D0A0082DE97 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 79D22ACB271B2D0A0082DE97 /* Build configuration list for PBXProject "KidsGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79D22AC7271B2D0A0082DE97;
+			productRefGroup = 79D22AD1271B2D0A0082DE97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79D22ACF271B2D0A0082DE97 /* KidsGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79D22ACE271B2D0A0082DE97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D22AE0271B2D0B0082DE97 /* LaunchScreen.storyboard in Resources */,
+				79D22ADD271B2D0B0082DE97 /* Assets.xcassets in Resources */,
+				79D22ADB271B2D0A0082DE97 /* Main.storyboard in Resources */,
+				79F88A9D272416C500D079DE /* IconCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		858E80CA50F49F9F1D34E3A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KidsGame/Pods-KidsGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KidsGame/Pods-KidsGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KidsGame/Pods-KidsGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A212699295B59C3B5641ABBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KidsGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79D22ACC271B2D0A0082DE97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7935A9162730678E0099DACA /* GameSummaryViewController.swift in Sources */,
+				7952BDCF2733DF4F003ABBBA /* MenuViewController.swift in Sources */,
+				79D22AD8271B2D0A0082DE97 /* ViewController.swift in Sources */,
+				79D22AD4271B2D0A0082DE97 /* AppDelegate.swift in Sources */,
+				79D22AD6271B2D0A0082DE97 /* SceneDelegate.swift in Sources */,
+				79F88A9C272416C500D079DE /* IconCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79D22AD9271B2D0A0082DE97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D22ADA271B2D0A0082DE97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79D22ADE271B2D0B0082DE97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D22ADF271B2D0B0082DE97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79D22AE2271B2D0B0082DE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79D22AE3271B2D0B0082DE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79D22AE5271B2D0B0082DE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7394BAFEEE664D4536224AE7 /* Pods-KidsGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35YV6W556V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KidsGame/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = KidsGame;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kurokiji.Juego-de-nin-os";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79D22AE6271B2D0B0082DE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8745FDF3159DF2B4EBA7F3 /* Pods-KidsGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35YV6W556V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KidsGame/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = KidsGame;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kurokiji.Juego-de-nin-os";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79D22ACB271B2D0A0082DE97 /* Build configuration list for PBXProject "KidsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D22AE2271B2D0B0082DE97 /* Debug */,
+				79D22AE3271B2D0B0082DE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D22AE4271B2D0B0082DE97 /* Build configuration list for PBXNativeTarget "KidsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D22AE5271B2D0B0082DE97 /* Debug */,
+				79D22AE6271B2D0B0082DE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79D22AC8271B2D0A0082DE97 /* Project object */;
+}
