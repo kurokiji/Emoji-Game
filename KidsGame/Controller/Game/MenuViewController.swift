@@ -9,7 +9,6 @@ import UIKit
 import FirebaseFirestore
 
 class MenuViewController: UIViewController {
-    let threeTop = TopThreeController()
     private let db = Firestore.firestore()
 
     @IBOutlet weak var menuBackground: UIView!
@@ -22,25 +21,31 @@ class MenuViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        threeTop.pullRecords()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        top1Name.text = threeTop.top1.name
-//        top1Points.text = "\(threeTop.top1.points) pts"
-//        top2Name.text = threeTop.top2.name
-//        top2Points.text = "\(threeTop.top2.points) pts"
-//        top3Name.text = threeTop.top3.name
-//        top3Points.text = "\(threeTop.top3.points) pts"
-        downloadRecords()
+ 
+        TopThreeController.pullRecords { user in
+            self.top1Name.text = user.name
+            self.top1Points.text = "\(user.points) pts"
+        }
         
         menuBackground.layer.cornerRadius = 20
     }
+    
+   
+
     
     @IBAction func unwindToMenu(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
         downloadRecords()
         
+    }
+    
+    public func asignRecords(name: String, points: Int){
+        top1Name.text = name
+        top1Points.text = "\(points) pts"
     }
     
     public func downloadRecords() {

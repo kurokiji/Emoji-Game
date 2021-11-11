@@ -45,7 +45,6 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        threeTop.pullRecords()
         gameTime = initialGameTime
         isPlaying = false
         generateLibrary()
@@ -103,26 +102,8 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         isPlaying = false
         roundTimer?.invalidate()
         gameTimer?.invalidate()
-        print(checkPosition())
-        if checkPosition() == "noTop" {
-            performSegue(withIdentifier: "showGameSummary", sender: nil)
-        } else {
-            performSegue(withIdentifier: "showTopRegister", sender: nil)
-        }
-    
+        performSegue(withIdentifier: "showGameSummary", sender: nil)
 //        presentAlert()
-    }
-    
-    private func checkPosition() -> String{
-        if points > threeTop.top1.points{
-            return "top1"
-        } else if points > threeTop.top2.points {
-            return "top2"
-        } else if points > threeTop.top3.points {
-            return "top3"
-        } else {
-            return "noTop"
-        }
     }
     
     private func checkAnswer(selectedIcon: Int) {
@@ -226,12 +207,6 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         if segue.identifier == "showGameSummary" {
             let controller = segue.destination as! GameSummaryViewController
             controller.finalPoints = points
-        }
-        
-        if segue.identifier == "showTopRegister" {
-            let controller = segue.destination as! RecordWonViewController
-            controller.finalPoints = points
-            controller.position = checkPosition()
         }
     }
     
