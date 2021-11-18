@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7935A9162730678E0099DACA /* GameSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A9152730678E0099DACA /* GameSummaryViewController.swift */; };
 		7952BDCF2733DF4F003ABBBA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952BDCE2733DF4F003ABBBA /* MenuViewController.swift */; };
-		79A978DA273A780800274766 /* RecordWonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A978D9273A780800274766 /* RecordWonViewController.swift */; };
+		79A978DA273A780800274766 /* GameSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A978D9273A780800274766 /* GameSummaryViewController.swift */; };
 		79A978E0273A7F4600274766 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79A978DF273A7F4600274766 /* GoogleService-Info.plist */; };
-		79A978E2273A978B00274766 /* TopThreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A978E1273A978B00274766 /* TopThreeController.swift */; };
+		79A978E2273A978B00274766 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A978E1273A978B00274766 /* Networking.swift */; };
 		79D22AD4271B2D0A0082DE97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D22AD3271B2D0A0082DE97 /* AppDelegate.swift */; };
 		79D22AD6271B2D0A0082DE97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D22AD5271B2D0A0082DE97 /* SceneDelegate.swift */; };
 		79D22AD8271B2D0A0082DE97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D22AD7271B2D0A0082DE97 /* ViewController.swift */; };
@@ -26,11 +25,10 @@
 /* Begin PBXFileReference section */
 		0B8745FDF3159DF2B4EBA7F3 /* Pods-KidsGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsGame.release.xcconfig"; path = "Target Support Files/Pods-KidsGame/Pods-KidsGame.release.xcconfig"; sourceTree = "<group>"; };
 		7394BAFEEE664D4536224AE7 /* Pods-KidsGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsGame.debug.xcconfig"; path = "Target Support Files/Pods-KidsGame/Pods-KidsGame.debug.xcconfig"; sourceTree = "<group>"; };
-		7935A9152730678E0099DACA /* GameSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSummaryViewController.swift; sourceTree = "<group>"; };
 		7952BDCE2733DF4F003ABBBA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		79A978D9273A780800274766 /* RecordWonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWonViewController.swift; sourceTree = "<group>"; };
+		79A978D9273A780800274766 /* GameSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSummaryViewController.swift; sourceTree = "<group>"; };
 		79A978DF273A7F4600274766 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		79A978E1273A978B00274766 /* TopThreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopThreeController.swift; sourceTree = "<group>"; };
+		79A978E1273A978B00274766 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		79D22AD0271B2D0A0082DE97 /* KidsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D22AD3271B2D0A0082DE97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D22AD5271B2D0A0082DE97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,10 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				79D22AD7271B2D0A0082DE97 /* ViewController.swift */,
-				7935A9152730678E0099DACA /* GameSummaryViewController.swift */,
 				7952BDCE2733DF4F003ABBBA /* MenuViewController.swift */,
-				79A978D9273A780800274766 /* RecordWonViewController.swift */,
-				79A978E1273A978B00274766 /* TopThreeController.swift */,
+				79A978D9273A780800274766 /* GameSummaryViewController.swift */,
+				79A978E1273A978B00274766 /* Networking.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -293,10 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7935A9162730678E0099DACA /* GameSummaryViewController.swift in Sources */,
 				7952BDCF2733DF4F003ABBBA /* MenuViewController.swift in Sources */,
-				79A978E2273A978B00274766 /* TopThreeController.swift in Sources */,
-				79A978DA273A780800274766 /* RecordWonViewController.swift in Sources */,
+				79A978E2273A978B00274766 /* Networking.swift in Sources */,
+				79A978DA273A780800274766 /* GameSummaryViewController.swift in Sources */,
 				79D22AD8271B2D0A0082DE97 /* ViewController.swift in Sources */,
 				79D22AD4271B2D0A0082DE97 /* AppDelegate.swift in Sources */,
 				79D22AD6271B2D0A0082DE97 /* SceneDelegate.swift in Sources */,

@@ -41,7 +41,7 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
     var points = 0
     var iconsShuffled: [String]?
     var isPlaying: Bool?
-    let threeTop = TopThreeController()
+    let threeTop = Networking()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,11 +51,9 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         icons.register(IconCollectionViewCell.nib(), forCellWithReuseIdentifier: IconCollectionViewCell.identifier)
         icons.delegate = self
         icons.dataSource = self
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         startPreGameTimer()
     }
+    
     
     // MARK: - Controlling the game functions
 
@@ -118,6 +116,7 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         }
     }
     
+    // MARK: - Controlling interface functions
     public func changesIconsOnScreen() {
         UIView.transition(with: icons, duration: 0.2, options: .transitionCrossDissolve, animations: {
             self.iconsShuffled = self.iconsLibrary.shuffled()
@@ -130,7 +129,6 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         targetIcon.text = generateRandomTarget()
     }
     
-    // MARK: - Controlling interface functions
     private func generateLibrary() {
         iconsLibrary = iconsLibraries[Int.random(in: 0...iconsLibraries.count-1)]
         iconsShuffled = iconsLibrary.shuffled()
@@ -210,8 +208,10 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         }
     }
     
+    /*
+     Gracias a los unwind segues se puede lanzar una función cuando se vuelve este viewcontroller desde cualquier otro. En este caso, no es necesario controlar desde cual se viene, ya que solo existe uno más.
+     */
     @IBAction func unwindToGame(_ unwindSegue: UIStoryboardSegue) {
-//        let sourceViewController = unwindSegue.source
         Analytics.logEvent("RepeatPlay", parameters: ["message": "se ha vuelto a jugar"])
         startPreGameTimer()
         rebootGame()
